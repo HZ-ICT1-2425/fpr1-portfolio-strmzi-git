@@ -25,8 +25,7 @@
         </div>
         <div class="navbar-menu" id="navMenu">
             <div class="navbar-start">
-                <a href="{{ route('home') }}"
-                   class="navbar-item {{ Request::route()->getName() === 'home' ? "is-active" : "" }}">
+                <a href="{{ route('home') }}" class="navbar-item {{ Request::route()->getName() === 'home' ? 'is-active' : '' }}">
                     Home
                 </a>
             </div>
