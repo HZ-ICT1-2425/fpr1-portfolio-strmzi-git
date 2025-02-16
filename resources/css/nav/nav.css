@@ -1,0 +1,27 @@
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+    justify-content: center;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 16px;
+    border-bottom: 1px solid black;
+
+}
+
+.nav-item {
+    padding: 4px 12px;
+    color: black
+}
+
+.active {
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
+a, a:hover, a:focus, a:visited {
+    text-decoration: none;
+    color: black
+}

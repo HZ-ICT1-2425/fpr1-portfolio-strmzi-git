@@ -1,0 +1,5 @@
+{
+    "watch": ["app", "routes", "config", "resources/views"],
+    "ext": "php,env",
+    "exec": "php artisan serve"
+}
