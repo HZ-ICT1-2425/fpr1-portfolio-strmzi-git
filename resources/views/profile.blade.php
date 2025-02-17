@@ -1,23 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Timo's Landing Page</title>
-    @vite("resources/css/nav/nav.css")
-    @vite("resources/css/footer/footer.css")
-    @vite("resources/css/app.css")
+@extends('layout.app')
+
+@section('title', "Timo's profile")
+
+@section('css')
     @vite("resources/css/profile.css")
+@endsection
 
-
-    <meta name="description" content="Timo's landing page">
-</head>
-<body>
-@include("partials.header")
-<main>
-    <div class="main-content">
-    <h1>Get to know Timo</h1>
-    <img src="{{ asset('images/Profile.png') }}" height="200px" width="200px" class="img" alt="Profile">
+@section('main-content')
+    <main>
+        <h2>Get to know Timo</h2>
+        <img src="{{ asset('images/Profile.png') }}" height="200px" width="200px" class="img" alt="Profile">
         <div class="text-wrap">
             <p>
                 I enjoy solving problems which being able to code allows me to do.
@@ -34,9 +26,6 @@
                 highest chance of eventually achieving financial and time freedom.
             </p>
         </div>
-    </div>
-</main>
-@include("partials.footer")
+    </main>
+@endsection
 
-</body>
-</html>

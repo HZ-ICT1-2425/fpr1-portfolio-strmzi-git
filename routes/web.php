@@ -12,6 +12,8 @@ Route::get("/profile", [PageController::class, "profile"])->name('profile');
 
 Route::get("/blog", [BlogController::class, "blog"])->name('blog');
 
+Route::get("/blog/{slug}", [BlogController::class, "single"])->name('single');
+
 Route::get("/dashboard", [DashboardController::class, "dashboard"])->name('faq');
 
 Route::get("/faq", [FaqController::class, "faq"])->name('faq');
